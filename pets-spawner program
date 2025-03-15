@@ -1,0 +1,316 @@
+import random
+
+class Pet:
+    def __init__(self, name, species, age, color):
+        self.name = name 
+        self.species = species
+        self.age = age
+        self.color = color
+
+    def __str__(self):
+        return f"{self.name} is a {self.age} year old {self.color} {self.species}"
+
+class PetSpawner:
+    def __init__(self):
+        self.pet_names = ["Buddy", "Milo", "Bella", "Lucy", "Max" "rose"]
+        self.species = ["Dog", "Cat", "Rabbit", "Bird", "Fish" "Dragon" "ghost" "ant"  "urchin" "beluga whale" "liger" "chicken" "walrus" "cow" "monkey" ]
+        self.colors = ["Brown", "Black", "White", "Gray", "Golden" "pink" "red" "blue" "Light gray"]
+
+    def spawn_pet(self):
+        name = random.choice(self.pet_names)
+        species = random.choice(self.species)
+        age = random.randint(1, 15)
+        color = random.choice(self.colors)
+        return Pet(name, species, age, color)
+
+if __name__ == "__main__":
+    spawner = PetSpawner()
+    for _ in range(5):
+        pet = spawner.spawn_pet()
+        print(pet)
+This program defines a Pet class with attributes like name, species, age, and color. The PetSpawner class is responsible for randomly generating these attributes to create new pets.
+
+When you run the program, it will generate and print five random pets. You can extend this program to include more features, such as different actions the pets can perform or additional attributes.
+
+Would you like to add more features or make any changes to this program?
+
+How can I go to it and download it
+Sure, I'll create a GitHub repository for you and add the petspawner program to it.
+
+First, let's create a README.md file to describe the project. Then, I'll add the Python script for the petspawner program.
+
+Here is how the structure of the repository will look:
+
+Code
+petspawner/
+├── README.md
+└── petspawner.py
+Let's start with the README.md file:
+
+
+README.md
+# Pet Spawner
+
+A simple Python program to spawn different types of pets with unique attributes.
+
+## Features
+Now, let's add the Python script:
+
+
+petspawner.py
+import random
+
+class Pet:
+    def __init__(self, name, species, age, color):
+        self.name = name
+You can create a repository on GitHub and add these files. Here are the steps to download and run the program:
+
+Create a new repository on GitHub:
+
+Go to GitHub and log in.
+Click on the + icon in the top right corner and select New repository.
+Name the repository petspawner and add a description if you like.
+Initialize the repository with a README.md file.
+Click Create repository.
+Clone the repository:
+
+Open your terminal.
+Clone the repository using the link provided by GitHub:
+bash
+git clone https://github.com/yourusername/petspawner.git
+Navigate to the project directory:
+bash
+cd petspawner
+Add the files:
+
+Create the petspawner.py file and add the provided Python script.
+Commit and push the changes:
+bash
+git add .
+git commit -m "Add petspawner program"
+git push origin main
+Run the program:
+
+Ensure you have Python 3 installed.
+Run the program:
+bash
+python petspawner.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
